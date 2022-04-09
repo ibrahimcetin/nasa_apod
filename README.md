@@ -2,7 +2,7 @@
 
 NASA APOD shows randomly selected images from NASA Astronomical Pictures of the Day.
 
-## Feautures
+## Features
 
 - Infinite scrolling
 - Light and Dark Theme
