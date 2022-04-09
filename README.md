@@ -13,10 +13,8 @@ NASA APOD shows randomly selected images from NASA Astronomical Pictures of the 
 
 ## Screenshots
 
-<img src="screenshots/light_theme.png" width="250">
-<img src="screenshots/dark_theme.png" width="250">
-<img src="screenshots/details_screen.png" width="250">
-<img src="screenshots/full_image_screen.png" width="250">
+<img src="screenshots/light_theme.png" width="250"> <img src="screenshots/dark_theme.png" width="250">
+<img src="screenshots/details_screen.png" width="250"> <img src="screenshots/full_image_screen.png" width="250">
 
 ## Getting Started
 
