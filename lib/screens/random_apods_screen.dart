@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shimmer/shimmer.dart';
 
 import '../api/nasa_apod_service.dart';
 import '../components/apod_card.dart';
@@ -55,8 +56,30 @@ class _RandomApodsScreenState extends State<RandomApodsScreen> {
   @override
   Widget build(BuildContext context) {
     if (apods.isEmpty) {
-      return const Center(
-        child: CircularProgressIndicator(),
+      return Shimmer.fromColors(
+        baseColor: Theme.of(context).colorScheme.primary,
+        highlightColor: Theme.of(context).colorScheme.secondary,
+        child: ListView(
+          physics: const NeverScrollableScrollPhysics(),
+          children: [
+            Container(
+              height: 300,
+              margin: const EdgeInsets.only(left: 16, right: 16, bottom: 16),
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.primary,
+                borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+              ),
+            ),
+            Container(
+              height: 300,
+              margin: const EdgeInsets.only(left: 16, right: 16, bottom: 16),
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.primary,
+                borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+              ),
+            ),
+          ],
+        ),
       );
     }
 

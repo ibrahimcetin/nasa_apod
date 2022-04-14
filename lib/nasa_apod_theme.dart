@@ -2,21 +2,19 @@ import 'package:flutter/material.dart';
 
 class NasaApodThemeData {
   static ThemeData light() {
-    return ThemeData.light().copyWith(
-      colorScheme: ColorScheme.fromSwatch().copyWith(
-        brightness: Brightness.light,
-        primary: Colors.grey,
-        secondary: Colors.grey,
+    return ThemeData(
+      colorScheme: ColorScheme.light(
+        primary: Colors.grey.shade300,
+        secondary: Colors.grey.shade100,
       ),
     );
   }
 
   static ThemeData dark() {
-    return ThemeData.dark().copyWith(
-      colorScheme: ColorScheme.fromSwatch().copyWith(
-        brightness: Brightness.dark,
+    return ThemeData(
+      colorScheme: ColorScheme.dark(
         primary: Colors.grey.shade800,
-        secondary: Colors.grey,
+        secondary: Colors.grey.shade600,
       ),
     );
   }
